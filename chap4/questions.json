@@ -1,0 +1,92 @@
+[
+    {
+        "question" : "Which specific regions or countries in Asia appear to have the highest concentration of human trafficking incidents ?",
+        "choice1" : "East Asia (China, Japan, Korea, Taiwan)",
+        "choice2" : "South Asia (Bangladesh, India, Pakistan, Sri Lanka)",
+        "choice3" : "Western Asia (Israel, Turkey, Saudi Arabia, Qatar)",
+        "choice4" : "Southeast Asia (Cambodia, Myanmar, Thailand, Malaysia)",
+        "answer" : 4
+
+    },
+    {
+        "question" : "Which is not the factor contribute to human trafficking ?",
+        "choice1" : "Political Instability",
+        "choice2" : "Culture",
+        "choice3" : "Race or Ethnicity",
+        "choice4" : "Conflicts",
+        "answer" : 3
+
+    },
+    {
+        "question" : "Which human trafficking case has the highest number of victims ?",
+        "choice1" : "Opeam Trade",
+        "choice2" : "Marriage Between the Living & the Dead",
+        "choice3" : "Slave Bride",
+        "choice4" : "Organ Harvesting",
+        "answer" : 1
+
+    },
+    {
+        "question" : "Child Soldier is most related to ?",
+        "choice1" : "Supply & Demand",
+        "choice2" : "Political Instability",
+        "choice3" : "Economic Factors",
+        "choice4" : "Conflicts",
+        "answer" : 4
+
+    },
+    {
+        "question" : "Which country does marriage between the dead and the living happens most ?",
+        "choice1" : "Cambodia",
+        "choice2" : "China",
+        "choice3" : "Japan",
+        "choice4" : "Taiwan",
+        "answer" : 2
+
+    },
+    {
+        "question" : "Which country does forced labour trafficking went viral ? (KK Garden of Hell)",
+        "choice1" : "Myanmar",
+        "choice2" : "Laos",
+        "choice3" : "Cambodia",
+        "choice4" : "Thailand",
+        "answer" : 1
+
+    },
+    {
+        "question" : "Which country does Seafood Slavery in fishery industry took place?",
+        "choice1" : "Cambodia",
+        "choice2" : "India",
+        "choice3" : "Thailand",
+        "choice4" : "Japan",
+        "answer" : 3
+
+    },
+    {
+        "question" : "Which factor contribute most to human trafficking in Asia?",
+        "choice1" : "Political Instability",
+        "choice2" : "Gender Inequality",
+        "choice3" : "Conflicts",
+        "choice4" : "Demand & Supply",
+        "answer" : 1
+
+    },
+    {
+        "question" : "Which factor is the second msot contributed to human trafficking in Asia?",
+        "choice1" : "Political Instability",
+        "choice2" : "Gender Inequality",
+        "choice3" : "Conflicts",
+        "choice4" : "Demand & Supply",
+        "answer" : 4
+
+    },
+    {
+        "question" : "Who was the First President of India ?",
+        "choice1" : "A.P.J Abdul Kalam",
+        "choice2" : "Dr. Rajendra Prasad",
+        "choice3" : "Sarvepalli Radhakrishnan",
+        "choice4" : "Zakir Hussain",
+        "answer" : 2
+
+    }
+]

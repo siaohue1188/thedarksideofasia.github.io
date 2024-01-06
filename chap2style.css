@@ -1,0 +1,421 @@
+:root{
+    --primary-color:#707070;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'poppins',sans-serif;
+}
+.hints {
+    text-align: center;
+    padding: 1.4rem;
+    width: 300vw;
+    left:15vw;
+    background-color: whitesmoke;
+    font-weight: 600;
+}
+.timeline-wrapper{
+    width:300vw;
+    height:92vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background-color: whitesmoke;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*  横线长度颜色    */
+.timeline{
+    width:1600vw;
+    height:.12rem;
+    padding:0 4rem;
+    background-color: #888;
+    list-style-type:none;
+
+    --scale:1;
+
+    display:flex;
+}
+/*  incident之间的距离  */
+.timeline li{
+    position:relative;
+    width:25rem;
+    left:15vw;
+}
+
+/*  竖线 */
+.timeline li::before{
+    position:absolute;
+    content:"";
+}
+/*  竖线 日期 主题 内容*/
+.timeline li::before,
+.timeline li::after,
+.timeline li .title,
+.data{
+    position:absolute;
+    content: "";
+    left:30%;
+    top:50%;
+    transform:translate(-50%, -50%) scale(var(--scale));
+    transition:.5s ease;
+}
+/*  竖线    指下面  indicator*/
+.timeline li:nth-child(1):before{
+    top:1rem;
+    
+    display:inline-block;
+    width:0.15rem;
+    height:12rem;
+    background-color: #888;
+}
+.timeline li:nth-child(2):before{
+    top:1rem;
+    
+    display:inline-block;
+    width:0.15rem;
+    height:21rem;
+    background-color: #888;
+}
+
+/*  竖线  指上面  */
+.timeline li:nth-child(3):before{
+    top:5rem;
+    height:5rem;
+    display:inline-block;
+    width:0.15rem;
+    background-color: #888;
+}
+.timeline li:nth-child(4):before{
+    top:5rem;
+    height:11rem;
+    display:inline-block;
+    width:0.15rem;
+    background-color: #888;
+}
+.timeline li:nth-child(5):before{
+    top:5rem;
+    height:10rem;
+    display:inline-block;
+    width:0.15rem;
+    background-color: #888;
+}
+.timeline li:nth-child(6):before{
+    top:6rem;
+    height:14rem;
+    display:inline-block;
+    width:0.15rem;
+    background-color: #888;
+}
+.timeline li:nth-child(7):before{
+    top:5rem;
+    height:14rem;
+    display:inline-block;
+    width:0.15rem;
+    background-color: #888;
+}
+.timeline li:nth-child(8):before{
+    top:0rem;
+    height:15rem;
+    display:inline-block;
+    width:0.15rem;
+    background-color: #888;
+}
+.timeline li:nth-child(9):before{
+    top:-8rem;
+    height:11rem;
+    display:inline-block;
+    width:0.15rem;
+    background-color: #888;
+}
+.timeline li:nth-child(10):before{
+    top:5rem;
+    height:10rem;
+    display:inline-block;
+    width:0.15rem;
+    background-color: #888;
+}
+/*  竖线  hover effect  */
+.timeline li:hover::before{
+    background-color: var(--primary-color);
+}
+
+
+/*  日期  下面  */
+.timeline li::after{
+    content:attr(data-date);
+    font-weight:bold;
+}
+/*  日期  上面  */
+.timeline li:nth-child(1):after{
+    top:8rem;
+}
+.timeline li:nth-child(2):after{
+    top:13rem;
+}
+.timeline li:nth-child(3):after{
+    top:9rem;
+}
+.timeline li:nth-child(4):after{
+    top:12rem;
+}
+.timeline li:nth-child(5):after{
+    top:11rem;
+}
+.timeline li:nth-child(6):after{
+    top:14rem;
+}.timeline li:nth-child(7):after{
+    top:13rem;
+}.timeline li:nth-child(8):after{
+    top:9rem;
+}.timeline li:nth-child(9):after{
+    top:-15rem;
+}.timeline li:nth-child(10):after{
+    top:11rem;
+}
+/*  日期  case名字  照片hover effect  */
+.timeline li:hover:after,
+.timeline li:hover .title{
+    color:var(--primary-color);
+    --scale:1.2;
+}
+
+
+
+/*  case名字 下面  */
+.timeline li .title{
+    top:2.4rem;
+    font:600 1.1rem 'poppins', sans-serif;
+    white-space: pre;
+    opacity:1;
+}
+/*  case名字 上面 */
+.timeline li >.title{
+    top:7rem;
+}
+.timeline li:nth-child(1) >.title{
+    top:10rem;
+}
+.timeline li:nth-child(2) >.title{
+    top:15rem;
+}
+.timeline li:nth-child(3) >.title{
+    top:11rem;
+}
+.timeline li:nth-child(4) >.title{
+    top:14rem;
+}
+.timeline li:nth-child(5) >.title{
+    top:13rem;
+}
+.timeline li:nth-child(6) >.title{
+    top:16rem;
+}
+.timeline li:nth-child(7) >.title{
+    top:15rem;
+}
+.timeline li:nth-child(8) >.title{
+    top:11rem;
+}
+.timeline li:nth-child(9) >.title{
+    top:-17rem;
+}
+.timeline li:nth-child(10) >.title{
+    top:13rem;
+}
+
+
+
+/*  照片的大小+位置  */
+.timeline li:nth-child(1) .illustration{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    left: calc(50% - 80px); /* Adjust left position to center the image horizontally */
+    top: calc(50% - 20px); /* Adjust top position to center the image vertically */
+    transform: translate(-50%, -50%);
+    transition: transform 0.5s ease;
+}
+.timeline li:nth-child(2) .illustration{
+    width: 550px;
+    height: 550px;
+    position: absolute;
+    left: calc(50% - 90px); /* Adjust left position to center the image horizontally */
+    top: calc(50% - 100px); /* Adjust top position to center the image vertically */
+    transform: translate(-50%, -50%);
+    transition: transform 0.5s ease;
+}
+.timeline li:nth-child(3) .illustration{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    left: calc(50% - 50px); /* Adjust left position to center the image horizontally */
+    top: calc(50% - 90px); /* Adjust top position to center the image vertically */
+    transform: translate(-50%, -50%);
+    transition: transform 0.5s ease;
+}
+.timeline li:nth-child(4) .illustration{
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    left: calc(50% - 70px); /* Adjust left position to center the image horizontally */
+    top: calc(50% - 40px); /* Adjust top position to center the image vertically */
+    transform: translate(-50%, -50%);
+    transition: transform 0.5s ease;
+}
+.timeline li:nth-child(5) .illustration{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: calc(50% - 75px); /* Adjust left position to center the image horizontally */
+    top: calc(50% - 50px); /* Adjust top position to center the image vertically */
+    transform: translate(-50%, -50%);
+    transition: transform 0.5s ease;
+}
+.timeline li:nth-child(6) .illustration{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    left: calc(50% - 80px); /* Adjust left position to center the image horizontally */
+    top: calc(50% - 50px); /* Adjust top position to center the image vertically */
+    transform: translate(-50%, -50%);
+    transition: transform 0.5s ease;
+}
+.timeline li:nth-child(7) .illustration{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: calc(50% - 80px); /* Adjust left position to center the image horizontally */
+    top: calc(50% - 30px); /* Adjust top position to center the image vertically */
+    transform: translate(-50%, -50%);
+    transition: transform 0.5s ease;
+}
+.timeline li:nth-child(8) .illustration{
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    left: calc(50% - 150px); /* Adjust left position to center the image horizontally */
+    top: calc(50% - 170px); /* Adjust top position to center the image vertically */
+    transform: translate(-50%, -50%);
+    transition: transform 0.5s ease;
+}
+.timeline li:nth-child(9) .illustration{
+    width: 550px;
+    height: 550px;
+    position: absolute;
+    left: calc(50% - 120px); /* Adjust left position to center the image horizontally */
+    top: calc(50% - 0px); /* Adjust top position to center the image vertically */
+    transform: translate(-50%, -50%);
+    transition: transform 0.5s ease;
+}
+.timeline li:nth-child(10) .illustration{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: calc(50% - 70px); /* Adjust left position to center the image horizontally */
+    top: calc(50% - 115px); /* Adjust top position to center the image vertically */
+    transform: translate(-50%, -50%);
+    transition: transform 0.5s ease;
+}
+
+/*  照片的hover effect  */
+.timeline li:hover .illustration{
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* Content Box */
+
+/*  bullet  */
+.data{
+
+    background-color: #000000;
+    border-radius: 10%; 
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    
+    overflow:hidden;
+    transition:0.3s ease;
+    opacity: 0;
+
+}
+.data .thumbnail{
+    width:290px;
+    height:200px;
+    display:flex;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.data h3{
+    color:#000000;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'typewritter'; 
+    white-space: pre;
+}
+.data h4{
+    color:#000000;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'typewritter';
+}
+.data small{
+    color:#000000;
+    display:flex;
+    justify-content: center;
+    text-align:center;
+    font-weight:bold;
+    font-family: 'typewritter';
+}
+.data p{
+    background-color: #fff3;
+    padding:1rem;
+    border-radius:1rem;
+    text-align: justify;
+    margin-left:0;
+    font-family: 'typewritter';
+}
+
+/*  open to explore button  */
+.data .open{
+    align-self:center;
+    background-color: #ffffff;
+
+    padding: .5rem .8rem;
+    border-radius:2rem;
+
+    font-size:1rem;
+    font-weight:bold;
+    font-family: 'typewritter';
+}
+.data .open a{
+    text-decoration: none;
+    color:#000000;
+    font-family: 'typewritter';
+}
+.data:hover,
+.data:hover::before,
+.data:hover::after {
+    opacity: 1; /* Set opacity to 1 on hover (fully visible) */
+} 
+.timeline li .data{
+    
+    --scale:1.2;
+    cursor:pointer;
+    width:20rem;
+    height:35rem;
+    border-radius: 1rem;
+    padding:1rem;
+    background-image: url("img/report.png");
+    box-shadow: 0 .1rem;;
+    z-index:1;
+    transition: opacity 1s ease-in-out, visibility 0.3s ease-in-out;
+    transition-delay: 0.4s;
+} 
